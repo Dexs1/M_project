@@ -1,0 +1,29 @@
+uuid: 1efd8688-fb03-4da8-b0f8-9797a5846169
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.medium_news
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__medium_news_block_2
+theme: bartik
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:medium_news-block_2'
+settings:
+  id: 'views_block:medium_news-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,24 @@
+uuid: 63c0489c-5a0a-4274-b19d-f5e1af8ce831
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.editor_picks
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__editor_picks_block_1
+theme: bartik
+region: footer_second
+weight: -10
+provider: null
+plugin: 'views_block:editor_picks-block_1'
+settings:
+  id: 'views_block:editor_picks-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

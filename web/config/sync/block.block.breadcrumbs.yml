@@ -1,0 +1,24 @@
+uuid: ac1b0666-f86b-4ccf-b95a-045c678ef204
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: breadcrumbs
+theme: bootstrap5
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: '© Copyright - Newspaper theme by tagDiv'
+  label_display: visible
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '© Copyright - Newspaper theme by tagDiv'

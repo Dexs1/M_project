@@ -1,0 +1,20 @@
+uuid: 35646602-dd70-462a-bc12-ec1e74538fb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: messages
+theme: bootstrap5
+region: footer
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: '© Copyright - Newspaper theme by tagDiv'
+  label_display: visible
+  provider: system
+visibility: {  }

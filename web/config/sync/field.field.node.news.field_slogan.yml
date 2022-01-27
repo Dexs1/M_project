@@ -1,0 +1,24 @@
+uuid: cb45f9bd-a3e8-49cd-94ef-08603a094210
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slogan
+    - node.type.news
+  module:
+    - text
+id: node.news.field_slogan
+field_name: field_slogan
+entity_type: node
+bundle: news
+label: 'Slogan Text'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Refreshingly, what was expected of her was the same thing that was expected of Lara Stone: to take a beautiful picture.'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

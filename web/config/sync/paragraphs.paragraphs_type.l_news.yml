@@ -1,0 +1,10 @@
+uuid: 8649ba4f-ab02-4fa1-ad2a-269f917b94dc
+langcode: en
+status: true
+dependencies: {  }
+id: l_news
+label: L_News
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
