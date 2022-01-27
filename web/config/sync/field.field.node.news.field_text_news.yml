@@ -1,0 +1,23 @@
+uuid: 41b6bef5-b389-4ed5-8d03-e1d05b6ba769
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_news
+    - node.type.news
+  module:
+    - text
+id: node.news.field_text_news
+field_name: field_text_news
+entity_type: node
+bundle: news
+label: Text_content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

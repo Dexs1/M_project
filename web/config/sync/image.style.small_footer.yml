@@ -1,0 +1,15 @@
+uuid: bb58d6a7-9162-4990-ac67-a380de2194c8
+langcode: en
+status: true
+dependencies: {  }
+name: small_footer
+label: 'small footer'
+effects:
+  b23b8cc6-b34b-4ff6-99d2-c9414a698476:
+    uuid: b23b8cc6-b34b-4ff6-99d2-c9414a698476
+    id: image_scale
+    weight: 1
+    data:
+      width: 111
+      height: 78
+      upscale: false

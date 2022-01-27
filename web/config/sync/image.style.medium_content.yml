@@ -1,0 +1,14 @@
+uuid: 810ee761-b854-4ded-88d3-994eb74e0951
+langcode: en
+status: true
+dependencies: {  }
+name: medium_content
+label: 'medium content'
+effects:
+  689ba092-3da1-43e8-8a47-6956457bb4bb:
+    uuid: 689ba092-3da1-43e8-8a47-6956457bb4bb
+    id: image_resize
+    weight: 2
+    data:
+      width: 268
+      height: 134

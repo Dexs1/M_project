@@ -1,0 +1,14 @@
+uuid: 9df8ed7d-575d-470b-b38e-087cc5164cf0
+langcode: en
+status: true
+dependencies: {  }
+name: medium_footer
+label: 'medium footer'
+effects:
+  08e4ae57-40f5-4054-aaea-f669e3762e1a:
+    uuid: 08e4ae57-40f5-4054-aaea-f669e3762e1a
+    id: image_resize
+    weight: 1
+    data:
+      width: 306
+      height: 306
