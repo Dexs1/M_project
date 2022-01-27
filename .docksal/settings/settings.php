@@ -268,6 +268,7 @@ $databases = [];
  */
 $config_directories = [];
 
+$settings['config_sync_directory'] = '../config';
 /**
  * Settings:
  *
