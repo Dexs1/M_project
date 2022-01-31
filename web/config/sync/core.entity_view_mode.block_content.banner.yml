@@ -1,0 +1,10 @@
+uuid: 70980fee-653a-40f0-8e5a-bda6fc30a761
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.banner
+label: banner
+targetEntityType: block_content
+cache: true
