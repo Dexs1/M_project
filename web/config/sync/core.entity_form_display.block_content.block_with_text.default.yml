@@ -1,25 +1,26 @@
-uuid: a357b270-0e80-4701-b4d3-3ff36acd9700
+uuid: f63b859c-e9fb-4c87-8797-df6f99ed9cd2
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.basic
-    - field.field.block_content.basic.field_banner
+    - block_content.type.block_with_text
+    - field.field.block_content.block_with_text.body
   module:
-    - media_library
-_core:
-  default_config_hash: jAps3FCxvKecABS_tgExbhCZrBLQB3bNPWw18WjE3ss
-id: block_content.basic.default
+    - text
+id: block_content.block_with_text.default
 targetEntityType: block_content
-bundle: basic
+bundle: block_with_text
 mode: default
 content:
-  field_banner:
-    type: media_library_widget
+  body:
+    type: text_textarea_with_summary
     weight: 26
     region: content
     settings:
-      media_types: {  }
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
     third_party_settings: {  }
   info:
     type: string_textfield

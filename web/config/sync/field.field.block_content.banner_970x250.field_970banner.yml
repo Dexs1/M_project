@@ -1,0 +1,34 @@
+uuid: 8fb337bc-40e6-4f16-a87f-c6014c9f46e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_970x250
+    - field.storage.block_content.field_970banner
+    - media.type.image
+  content:
+    - 'media:image:b03a7543-0b43-4eaa-afb5-8921d73fa7bd'
+id: block_content.banner_970x250.field_970banner
+field_name: field_970banner
+entity_type: block_content
+bundle: banner_970x250
+label: 970banner
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: b03a7543-0b43-4eaa-afb5-8921d73fa7bd
+    weight: 0
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

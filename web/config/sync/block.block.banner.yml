@@ -1,0 +1,30 @@
+uuid: d0826745-cd75-4b1a-a407-e3e06f21c121
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51bb8331-6c21-45b2-864e-61e6d5209ce5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: banner
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:51bb8331-6c21-45b2-864e-61e6d5209ce5'
+settings:
+  id: 'block_content:51bb8331-6c21-45b2-864e-61e6d5209ce5'
+  label: Banner
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

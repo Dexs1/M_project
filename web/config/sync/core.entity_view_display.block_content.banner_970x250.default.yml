@@ -1,0 +1,25 @@
+uuid: 59ffaa13-c668-4554-aec9-0c25857126f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_970x250
+    - field.field.block_content.banner_970x250.field_970banner
+    - image.style.banner_970x250
+  module:
+    - media
+id: block_content.banner_970x250.default
+targetEntityType: block_content
+bundle: banner_970x250
+mode: default
+content:
+  field_970banner:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: banner_970x250
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

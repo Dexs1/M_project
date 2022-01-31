@@ -1,0 +1,15 @@
+uuid: c2ecdaac-d928-475f-844f-0f08f4b4b5e7
+langcode: en
+status: true
+dependencies: {  }
+name: banner
+label: 'Banner 300x250'
+effects:
+  5cb9afc2-ee9d-4629-acf9-54a4878d6b42:
+    uuid: 5cb9afc2-ee9d-4629-acf9-54a4878d6b42
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 250
+      anchor: left-top

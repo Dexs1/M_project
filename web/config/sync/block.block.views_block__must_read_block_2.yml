@@ -1,0 +1,30 @@
+uuid: 9c0b29b8-f4d4-4e7a-82d9-c6fc55628b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.must_read
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__must_read_block_2
+theme: bartik
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'views_block:must_read-block_2'
+settings:
+  id: 'views_block:must_read-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'
