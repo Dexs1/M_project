@@ -1,6 +1,6 @@
 uuid: 816446e3-bf78-456e-9b67-75646305facb
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.content_recent
