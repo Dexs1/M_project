@@ -1,0 +1,22 @@
+uuid: 08864108-603b-46da-9d8a-0e56a0b9301f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - kitrab
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: kitrab_messages
+theme: kitrab
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 6334bb96-4cf2-4f83-af3a-a9e342899986
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - kitrab
+id: kitrab_banner970x250
+theme: kitrab
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:67b1497a-f868-4eea-a6a3-5f6fd3a6b06f'
+settings:
+  id: 'block_content:67b1497a-f868-4eea-a6a3-5f6fd3a6b06f'
+  label: Banner970x250
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

@@ -1,0 +1,22 @@
+uuid: 3e70e911-c228-4d4c-a626-4fe52fb88a41
+langcode: en
+status: true
+dependencies:
+  theme:
+    - kitrab
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: kitrab_local_tasks
+theme: kitrab
+region: content
+weight: -10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: bab0ec74-fbde-4da9-91cb-31f801d3c0ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - kitrab
+id: kitrab_banner
+theme: kitrab
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:51bb8331-6c21-45b2-864e-61e6d5209ce5'
+settings:
+  id: 'block_content:51bb8331-6c21-45b2-864e-61e6d5209ce5'
+  label: Banner
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'

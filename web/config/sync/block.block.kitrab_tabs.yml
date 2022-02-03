@@ -1,0 +1,20 @@
+uuid: 66890212-db10-4a99-bb91-22514196bc26
+langcode: en
+status: true
+dependencies:
+  theme:
+    - kitrab
+id: kitrab_tabs
+theme: kitrab
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
