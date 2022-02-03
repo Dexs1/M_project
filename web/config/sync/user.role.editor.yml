@@ -1,0 +1,37 @@
+uuid: 3d28dcf4-9f3c-4f8f-a3ad-10c494608278
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+    - taxonomy.vocabulary.category
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - node
+    - taxonomy
+id: editor
+label: Editor
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'create news content'
+  - 'create terms in category'
+  - 'create terms in tags'
+  - 'delete all revisions'
+  - 'delete any news content'
+  - 'delete news revisions'
+  - 'delete own news content'
+  - 'delete terms in category'
+  - 'delete terms in tags'
+  - 'edit any news content'
+  - 'edit own comments'
+  - 'edit own news content'
+  - 'edit terms in category'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert news revisions'
+  - 'view all revisions'
+  - 'view news revisions'
+  - 'view own unpublished content'

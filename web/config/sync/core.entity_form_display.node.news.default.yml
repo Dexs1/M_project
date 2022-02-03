@@ -55,7 +55,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_tagnews:
-    type: options_select
+    type: options_buttons
     weight: 1
     region: content
     settings: {  }
