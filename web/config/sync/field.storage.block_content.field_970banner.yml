@@ -1,0 +1,20 @@
+uuid: a6546ba3-e92c-4442-bc6b-2ee78756b682
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_970banner
+field_name: field_970banner
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -271,7 +271,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 16
       exposed_form:
         type: basic
         options:
@@ -342,7 +342,37 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      title: 'Latest News'
+      defaults:
+        title: false
       display_extenders: {  }
+      block_description: 'Latest content1'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_slogan'
+        - 'config:field.storage.node.field_tagnews'
+        - 'config:field.storage.node.field_text_news'
+  block_2:
+    id: block_2
+    display_title: 'Block 2'
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 3
+      defaults:
+        pager: false
+      display_extenders: {  }
+      block_description: 'Latest content2'
     cache_metadata:
       max-age: -1
       contexts:

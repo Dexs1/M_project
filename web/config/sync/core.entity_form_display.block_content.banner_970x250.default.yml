@@ -1,20 +1,18 @@
-uuid: a357b270-0e80-4701-b4d3-3ff36acd9700
+uuid: ec82517c-a4dc-494a-a23c-ad4fbc95372b
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.basic
-    - field.field.block_content.basic.field_banner
+    - block_content.type.banner_970x250
+    - field.field.block_content.banner_970x250.field_970banner
   module:
     - media_library
-_core:
-  default_config_hash: jAps3FCxvKecABS_tgExbhCZrBLQB3bNPWw18WjE3ss
-id: block_content.basic.default
+id: block_content.banner_970x250.default
 targetEntityType: block_content
-bundle: basic
+bundle: banner_970x250
 mode: default
 content:
-  field_banner:
+  field_970banner:
     type: media_library_widget
     weight: 26
     region: content

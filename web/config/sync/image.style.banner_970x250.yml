@@ -1,0 +1,15 @@
+uuid: 9eed0c9d-09a0-4dce-9b15-cecf09d2872d
+langcode: en
+status: true
+dependencies: {  }
+name: banner_970x250
+label: 'banner 970X250'
+effects:
+  b4b13da4-969a-4cd6-8d89-595823b61d8a:
+    uuid: b4b13da4-969a-4cd6-8d89-595823b61d8a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 970
+      height: 250
+      anchor: center-center

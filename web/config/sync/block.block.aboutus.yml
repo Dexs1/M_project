@@ -2,10 +2,6 @@ uuid: 25e3b89f-a767-4656-a455-6312120bb567
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:90c05f6c-b7dd-407b-8b69-930cdf96b044'
-  module:
-    - block_content
   theme:
     - bartik
 id: aboutus
