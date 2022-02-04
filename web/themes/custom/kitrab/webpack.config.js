@@ -1,27 +1,31 @@
 const path = require('path');
 const miniCss = require('mini-css-extract-plugin');
 
-let mode = 'development'; // По умолчанию режим development
-if (process.env.NODE_ENV === 'production') { // Режим production, если
-                                             // при запуске вебпака было указано --mode=production
+// Default development mode
+let mode = 'development';
+// Production mode, if when starting the webpack was specified --mode=production
+if (process.env.NODE_ENV === 'production') {
   mode = 'production';
 }
 
 module.exports = {
   mode,
-  entry: './src/index.js', // Указываем точку входа - главный модуль приложения,
-  // в который импортируются все остальные
+  // Specify the entry point - the main module of the application,
+  // in which all others are imported
+  entry: './src/index.js',
+
   devtool: 'source-map',
   devServer: {
-    hot: true, // Включает автоматическую перезагрузку страницы при изменениях
+    // Enables automatic page reloading when changed
+    hot: true,
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'), // Директория, в которой будет
-    // размещаться итоговый бандл, папка dist в корне приложения
-    clean: true, // Очищает директорию dist перед обновлением бандла
-    // Свойство стало доступно с версии 5.20.0, до этого использовался
-    // CleanWebpackPlugin
+    //The directory in which it will be to place the final bundle,
+    // the dist folder in the root of the application
+    path: path.resolve(__dirname, 'dist'),
+    //Clears the dist directory before updating the bundle
+    clean: true,
 
   },
   module: {
