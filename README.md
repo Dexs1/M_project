@@ -49,7 +49,12 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
 
 
     ```
-    После инициализации установим два пакета - webpack и webpack-cli:
+    npm init -y
+    
+    ```
+
+    ```
+    After initialization, install two packages - webpack and webpack-cli:
 
     npm i -D webpack webpack-cli
 
