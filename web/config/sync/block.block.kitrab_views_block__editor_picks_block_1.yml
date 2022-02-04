@@ -1,0 +1,24 @@
+uuid: 5d0bb869-5ea4-4591-96a7-5f5cf47a437e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.editor_picks
+  module:
+    - views
+  theme:
+    - kitrab
+id: kitrab_views_block__editor_picks_block_1
+theme: kitrab
+region: footer_first
+weight: -10
+provider: null
+plugin: 'views_block:editor_picks-block_1'
+settings:
+  id: 'views_block:editor_picks-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

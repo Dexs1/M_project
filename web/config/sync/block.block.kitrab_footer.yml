@@ -1,0 +1,27 @@
+uuid: 6e19f245-1657-4980-8f83-04e8b34bef84
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - kitrab
+_core:
+  default_config_hash: pnCK21YFjH7iB4XDeokSq3N3XSr6qX8BsqMs9nmip6E
+id: kitrab_footer
+theme: kitrab
+region: footer_fifth
+weight: -9
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

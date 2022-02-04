@@ -1,0 +1,23 @@
+uuid: 1fa382b8-d9f4-4067-8631-1c7f8eed0579
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - kitrab
+id: kitrab_sitebranding
+theme: kitrab
+region: footer_fifth
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: '© Copyright - Newspaper theme by tagDiv'
+  label_display: visible
+  provider: system
+  use_site_logo: false
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

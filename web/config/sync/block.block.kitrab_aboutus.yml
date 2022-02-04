@@ -1,0 +1,21 @@
+uuid: a3194646-7774-4bb0-8457-c950b7b18927
+langcode: en
+status: true
+dependencies:
+  theme:
+    - kitrab
+id: kitrab_aboutus
+theme: kitrab
+region: footer_fifth
+weight: -12
+provider: null
+plugin: 'block_content:90c05f6c-b7dd-407b-8b69-930cdf96b044'
+settings:
+  id: 'block_content:90c05f6c-b7dd-407b-8b69-930cdf96b044'
+  label: 'About Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
