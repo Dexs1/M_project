@@ -13,7 +13,7 @@ _core:
 id: kitrab_main_menu
 theme: kitrab
 region: header
-weight: -5
+weight: -14
 provider: null
 plugin: 'system_menu_block:main'
 settings:

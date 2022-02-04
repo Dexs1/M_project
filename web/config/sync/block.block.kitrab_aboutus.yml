@@ -6,8 +6,8 @@ dependencies:
     - kitrab
 id: kitrab_aboutus
 theme: kitrab
-region: header
-weight: -9
+region: footer_fifth
+weight: -12
 provider: null
 plugin: 'block_content:90c05f6c-b7dd-407b-8b69-930cdf96b044'
 settings:

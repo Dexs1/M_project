@@ -7,7 +7,7 @@ dependencies:
 id: kitrab_tabs
 theme: kitrab
 region: header
-weight: 0
+weight: -10
 provider: null
 plugin: local_tasks_block
 settings:
