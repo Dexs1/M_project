@@ -25,6 +25,10 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
     git clone https://github.com/docksal/boilerplate-drupal9-composer.git drupal9
     cd drupal9
     ```
+     ```
+    drush config-set "system.site" uuid "e799b1ad-4344-4dbe-b7f0-b8ca49a797b7"
+
+ ```
 
 2. Initialize the site
 
@@ -36,6 +40,33 @@ Follow [Docksal environment setup instructions](https://docs.docksal.io/getting-
    A `composer.lock` file will be generated. This file should be committed to your repository.
 
 3. Point your browser to
+
+    ```
+    http://drupal9.docksal
+    ```
+    
+4. Compilation of styles
+
+
+    ```
+    npm init -y
+    
+    ```
+
+    ```
+    After initialization, install two packages - webpack and webpack-cli:
+
+    npm i -D webpack webpack-cli
+
+    npm i -D mini-css-extract-plugin css-loader sass-loader sass postcss postcss-preset-env postcss-loader
+
+    ```
+  once run
+      ```
+      npm run build
+      ```
+
+5. Point your browser to
 
     ```
     http://drupal9.docksal
