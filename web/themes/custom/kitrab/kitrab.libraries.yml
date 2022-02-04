@@ -4,4 +4,4 @@ global-styling:
    js/custom.js: {}
   css:
     component:
-      css/style.css: {}
+      dist/style.css: {}
