@@ -1,0 +1,290 @@
+uuid: e8a82dad-6d92-44ab-b7e3-ce7c8a8053fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.main_page
+    - field.field.node.news.field_editor_pi
+    - field.field.node.news.field_image_news
+    - field.field.node.news.field_must_read
+    - field.field.node.news.field_slogan
+    - field.field.node.news.field_tagnews
+    - field.field.node.news.field_text_news
+    - node.type.news
+    - views.view.large_content
+    - views.view.latest_news
+    - views.view.medium_news
+    - views.view.music_festivals
+    - views.view.small_teaser
+  content:
+    - 'block_content:basic:943011ea-d6de-4653-adc0-7b6e2ecb5576'
+  module:
+    - block_content
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          9f92f06e-e67b-47d8-90ae-1d63e836a6f8:
+            uuid: 9f92f06e-e67b-47d8-90ae-1d63e836a6f8
+            region: first
+            configuration:
+              id: 'views_block:latest_news-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          1eddb7a4-0783-485d-bec5-e6927c611ecc:
+            uuid: 1eddb7a4-0783-485d-bec5-e6927c611ecc
+            region: second
+            configuration:
+              id: 'views_block:large_content-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          b8b1956f-bc94-48d4-83ce-36e7737f6444:
+            uuid: b8b1956f-bc94-48d4-83ce-36e7737f6444
+            region: second
+            configuration:
+              id: 'views_block:medium_news-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          f8d6471e-0d35-45d5-8d9b-8fc18543795e:
+            uuid: f8d6471e-0d35-45d5-8d9b-8fc18543795e
+            region: second
+            configuration:
+              id: 'views_block:medium_news-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          97ca8690-2156-4081-85d7-fdf3e34fdf9f:
+            uuid: 97ca8690-2156-4081-85d7-fdf3e34fdf9f
+            region: second
+            configuration:
+              id: 'views_block:medium_news-block_3'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 5
+            additional: {  }
+          d0c3b864-0c3a-4043-bd12-db68d2a810f1:
+            uuid: d0c3b864-0c3a-4043-bd12-db68d2a810f1
+            region: second
+            configuration:
+              id: 'views_block:small_teaser-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 7
+            additional: {  }
+          1362b482-2247-43c1-962f-7a22f7e75320:
+            uuid: 1362b482-2247-43c1-962f-7a22f7e75320
+            region: second
+            configuration:
+              id: 'block_content:943011ea-d6de-4653-adc0-7b6e2ecb5576'
+              label: Banner300_250
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 6
+            additional: {  }
+          a5a948d6-ecf4-497d-8da5-c712e81feeaa:
+            uuid: a5a948d6-ecf4-497d-8da5-c712e81feeaa
+            region: second
+            configuration:
+              id: 'views_block:small_teaser-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 8
+            additional: {  }
+          86966f58-d7c1-4bab-8ccd-8fdd1627ae8a:
+            uuid: 86966f58-d7c1-4bab-8ccd-8fdd1627ae8a
+            region: second
+            configuration:
+              id: 'views_block:large_content-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          857bc4ad-e702-4bed-b030-89c59ce60f39:
+            uuid: 857bc4ad-e702-4bed-b030-89c59ce60f39
+            region: content
+            configuration:
+              id: 'block_content:943011ea-d6de-4653-adc0-7b6e2ecb5576'
+              label: Banner300_250
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          86006550-c367-4be8-8652-76010a8998a7:
+            uuid: 86006550-c367-4be8-8652-76010a8998a7
+            region: second
+            configuration:
+              id: 'views_block:music_festivals-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          b839785d-2cc1-4f14-b996-cf2d3c8b1c16:
+            uuid: b839785d-2cc1-4f14-b996-cf2d3c8b1c16
+            region: first
+            configuration:
+              id: 'views_block:music_festivals-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          118e658c-e549-4d19-92d3-abdcf5e23d37:
+            uuid: 118e658c-e549-4d19-92d3-abdcf5e23d37
+            region: third
+            configuration:
+              id: 'views_block:music_festivals-block_3'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.news.main_page
+targetEntityType: node
+bundle: news
+mode: main_page
+content:
+  field_editor_pi:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image_news:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_must_read:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_slogan:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_tagnews:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text_news:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

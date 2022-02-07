@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Latest News'
+      title: 'Latest content'
       fields:
         title:
           id: title
@@ -270,7 +270,7 @@ display:
       pager:
         type: some
         options:
-          offset: 0
+          offset: 3
           items_per_page: 16
       exposed_form:
         type: basic
@@ -342,9 +342,8 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      title: 'Latest News'
       defaults:
-        title: false
+        title: true
       display_extenders: {  }
       block_description: 'Latest content1'
     cache_metadata:

@@ -16,8 +16,125 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          c6ebfdb4-2c4f-4a68-83f9-aacaabad2559:
+            uuid: c6ebfdb4-2c4f-4a68-83f9-aacaabad2559
+            region: content
+            configuration:
+              id: 'extra_field_block:node:news:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          466a27d6-36d4-4bd2-90e8-e17f70a13b47:
+            uuid: 466a27d6-36d4-4bd2-90e8-e17f70a13b47
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_tagnews'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          51e4b369-f241-4c13-bf15-bcf394c08384:
+            uuid: 51e4b369-f241-4c13-bf15-bcf394c08384
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_image_news'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          8da179d9-f947-42ca-a169-43de2b4a2209:
+            uuid: 8da179d9-f947-42ca-a169-43de2b4a2209
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_text_news'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          86c79482-72a7-48a3-bbfd-abd4c0346a28:
+            uuid: 86c79482-72a7-48a3-bbfd-abd4c0346a28
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_editor_pi'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          187c422d-fb6b-422b-a5e7-653ca61a796d:
+            uuid: 187c422d-fb6b-422b-a5e7-653ca61a796d
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_must_read'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          a4192599-1bb6-4cc8-98fa-f0f55e02b6e1:
+            uuid: a4192599-1bb6-4cc8-98fa-f0f55e02b6e1
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_slogan'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
 id: node.news.default
 targetEntityType: node
 bundle: news
