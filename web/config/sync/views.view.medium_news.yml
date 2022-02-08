@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Medium content'
+      title: Celebrities4m
       fields:
         title:
           id: title
@@ -174,13 +174,14 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Block
+    display_title: Recent_2_blocks
     display_plugin: block
     position: 1
     display_options:
-      title: 'Medium content'
+      title: Recent_2_blocks
       defaults:
         title: false
+      display_description: ''
       display_extenders: {  }
       block_description: Recent_2_views
     cache_metadata:
@@ -193,10 +194,11 @@ display:
       tags: {  }
   block_2:
     id: block_2
-    display_title: 'Block 2'
+    display_title: Technology
     display_plugin: block
     position: 2
     display_options:
+      title: Technology
       filters:
         status:
           id: status
@@ -216,8 +218,10 @@ display:
         groups:
           1: AND
       defaults:
+        title: false
         filters: false
         filter_groups: false
+      display_description: ''
       display_extenders: {  }
       block_description: Technology
     cache_metadata:
@@ -230,10 +234,11 @@ display:
       tags: {  }
   block_3:
     id: block_3
-    display_title: 'Block 3'
+    display_title: Celebrities4m
     display_plugin: block
     position: 3
     display_options:
+      display_description: ''
       display_extenders: {  }
       block_description: Celebrities4m
     cache_metadata:

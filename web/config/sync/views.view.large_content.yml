@@ -174,10 +174,11 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Block
+    display_title: 'Recent large content'
     display_plugin: block
     position: 1
     display_options:
+      title: 'Recent large content'
       arguments: {  }
       filters:
         status:
@@ -198,11 +199,13 @@ display:
         groups:
           1: AND
       defaults:
+        title: false
         relationships: false
         arguments: false
         filters: false
         filter_groups: false
       relationships: {  }
+      display_description: ''
       display_extenders: {  }
       block_description: 'Recent Large block'
     cache_metadata:
@@ -215,11 +218,11 @@ display:
       tags: {  }
   block_2:
     id: block_2
-    display_title: 'Block 2'
+    display_title: 'Celebrities big block'
     display_plugin: block
     position: 2
     display_options:
-      title: 'Large content'
+      title: 'Celebrities big block'
       arguments: {  }
       filters:
         status:
@@ -301,6 +304,7 @@ display:
           admin_label: 'field_tagnews: Taxonomy term'
           plugin_id: standard
           required: false
+      display_description: ''
       display_extenders: {  }
       block_description: 'Celebrities big block'
     cache_metadata:
