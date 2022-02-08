@@ -183,7 +183,7 @@ display:
         title: false
       display_description: ''
       display_extenders: {  }
-      block_description: Recent_2_views
+      block_description: Recent_2_blocks
     cache_metadata:
       max-age: -1
       contexts:
@@ -238,6 +238,9 @@ display:
     display_plugin: block
     position: 3
     display_options:
+      title: Celebrities4m
+      defaults:
+        title: false
       display_description: ''
       display_extenders: {  }
       block_description: Celebrities4m
