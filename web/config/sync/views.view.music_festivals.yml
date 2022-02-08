@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser_medium
+    - core.entity_view_mode.node.teaser_big
   module:
     - node
     - taxonomy
@@ -230,7 +230,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser_medium
+          view_mode: teaser_big
       query:
         type: views_query
         options:
@@ -263,15 +263,16 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Block
+    display_title: 'Music Large block'
     display_plugin: block
     position: 1
     display_options:
       title: 'Music Festivals'
       defaults:
         title: false
+      display_description: ''
       display_extenders: {  }
-      block_description: 'Music big block'
+      block_description: 'Music Large block'
     cache_metadata:
       max-age: -1
       contexts:
@@ -283,13 +284,14 @@ display:
       tags: {  }
   block_2:
     id: block_2
-    display_title: 'Block 2'
+    display_title: 'Music middle block'
     display_plugin: block
     position: 2
     display_options:
       title: 'Music Festivals'
       defaults:
         title: false
+      display_description: ''
       display_extenders: {  }
       block_description: 'Music middle block'
     cache_metadata:
@@ -303,7 +305,7 @@ display:
       tags: {  }
   block_3:
     id: block_3
-    display_title: 'Block 3'
+    display_title: 'Movies middle block'
     display_plugin: block
     position: 3
     display_options:
@@ -375,6 +377,7 @@ display:
         title: false
         filters: false
         filter_groups: false
+      display_description: ''
       display_extenders: {  }
       block_description: 'Movies middle block'
     cache_metadata:

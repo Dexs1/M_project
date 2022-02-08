@@ -1,0 +1,10 @@
+uuid: 5730b574-011e-4a1d-b3b8-36064b705203
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.main_page
+label: 'Main page'
+targetEntityType: node
+cache: true
