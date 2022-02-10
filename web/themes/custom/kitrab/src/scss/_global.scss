@@ -1,0 +1,10 @@
+$fonts-global:open-sans;
+
+a, a.link
+{
+  border-bottom: none;
+    &:hover{
+    border-bottom: none;
+  }
+}
+
