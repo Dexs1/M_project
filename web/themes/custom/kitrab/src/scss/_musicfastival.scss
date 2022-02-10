@@ -45,9 +45,10 @@ h2 > a {
     }
 }
 .layout--threecol-section {
-  @include md {
-    display:grid;
-    grid-template-rows:1fr 1fr 1fr;
+  @include media-breakpoint-max($md) {
+  display:grid;
+  grid-template-rows:auto 1fr auto;
 
+      }
   }
-}
+
