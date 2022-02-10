@@ -134,6 +134,116 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
+          b1b12ce1-4c9c-4426-8e62-6c68058c3839:
+            uuid: b1b12ce1-4c9c-4426-8e62-6c68058c3839
+            region: content
+            configuration:
+              id: 'extra_field_block:node:news:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 7
+            additional: {  }
+          59b2ee0b-2e6a-4185-8cc2-10ddac4f5d8b:
+            uuid: 59b2ee0b-2e6a-4185-8cc2-10ddac4f5d8b
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_tagnews'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          485b6d47-c2e5-4c16-b2c1-731f94c96d94:
+            uuid: 485b6d47-c2e5-4c16-b2c1-731f94c96d94
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_image_news'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          11c0dce1-c5a2-46da-859d-53d312337f59:
+            uuid: 11c0dce1-c5a2-46da-859d-53d312337f59
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_text_news'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          236704e1-96c0-4379-a3c2-13c396caee9d:
+            uuid: 236704e1-96c0-4379-a3c2-13c396caee9d
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_editor_pi'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          68823540-5647-4602-a616-e4cb135a99b6:
+            uuid: 68823540-5647-4602-a616-e4cb135a99b6
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_must_read'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: hidden
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          0ed97b25-5a68-4eea-93d4-5c0f1ea88c77:
+            uuid: 0ed97b25-5a68-4eea-93d4-5c0f1ea88c77
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_slogan'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 13
+            additional: {  }
         third_party_settings: {  }
 id: node.news.default
 targetEntityType: node
