@@ -3,12 +3,12 @@ langcode: en
 status: true
 dependencies: {  }
 name: large_content
-label: 'large content'
+label: 'large 600x400'
 effects:
   9f1fb506-dce6-48ad-a6cb-b0133df42918:
     uuid: 9f1fb506-dce6-48ad-a6cb-b0133df42918
     id: image_resize
     weight: 2
     data:
-      width: 576
-      height: 386
+      width: 600
+      height: 400
