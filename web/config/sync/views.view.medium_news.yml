@@ -161,6 +161,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: medium-block
       header: {  }
       footer: {  }
       display_extenders: {  }
