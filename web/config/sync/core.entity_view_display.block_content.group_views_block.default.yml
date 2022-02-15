@@ -1,0 +1,56 @@
+uuid: 6bfc92ae-3075-414b-9913-4b36585b700f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.group_views_block
+    - views.view.large_content
+    - views.view.medium_news
+  module:
+    - layout_builder
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          91298e5e-6ec9-41cb-8b3a-93c06ea547fe:
+            uuid: 91298e5e-6ec9-41cb-8b3a-93c06ea547fe
+            region: first
+            configuration:
+              id: 'views_block:large_content-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          f7bca917-7bdc-433b-98f5-626e001a675d:
+            uuid: f7bca917-7bdc-433b-98f5-626e001a675d
+            region: second
+            configuration:
+              id: 'views_block:medium_news-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.group_views_block.default
+targetEntityType: block_content
+bundle: group_views_block
+mode: default
+content: {  }
+hidden: {  }

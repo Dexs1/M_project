@@ -1,0 +1,8 @@
+uuid: e73aea18-205f-4704-850f-599e8ae1b2f6
+langcode: en
+status: true
+dependencies: {  }
+id: group_views_block
+label: 'group views block'
+revision: 0
+description: ''

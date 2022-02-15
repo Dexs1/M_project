@@ -18,6 +18,8 @@ dependencies:
     - views.view.small_teaser
   content:
     - 'block_content:basic:943011ea-d6de-4653-adc0-7b6e2ecb5576'
+    - 'block_content:group_views_block:4b36280e-6236-43ec-b339-1addd09a9d02'
+    - 'block_content:live_news:c324887c-c846-4a08-b035-19f2737a6a21'
   module:
     - block_content
     - layout_builder
@@ -50,32 +52,6 @@ third_party_settings:
               items_per_page: none
             weight: 0
             additional: {  }
-          1eddb7a4-0783-485d-bec5-e6927c611ecc:
-            uuid: 1eddb7a4-0783-485d-bec5-e6927c611ecc
-            region: second
-            configuration:
-              id: 'views_block:large_content-block_1'
-              label: ''
-              label_display: visible
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 0
-            additional: {  }
-          b8b1956f-bc94-48d4-83ce-36e7737f6444:
-            uuid: b8b1956f-bc94-48d4-83ce-36e7737f6444
-            region: second
-            configuration:
-              id: 'views_block:medium_news-block_1'
-              label: ''
-              label_display: visible
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 1
-            additional: {  }
           f8d6471e-0d35-45d5-8d9b-8fc18543795e:
             uuid: f8d6471e-0d35-45d5-8d9b-8fc18543795e
             region: second
@@ -87,7 +63,7 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 2
+            weight: 12
             additional: {  }
           97ca8690-2156-4081-85d7-fdf3e34fdf9f:
             uuid: 97ca8690-2156-4081-85d7-fdf3e34fdf9f
@@ -100,7 +76,7 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 5
+            weight: 14
             additional: {  }
           d0c3b864-0c3a-4043-bd12-db68d2a810f1:
             uuid: d0c3b864-0c3a-4043-bd12-db68d2a810f1
@@ -113,7 +89,7 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 7
+            weight: 16
             additional: {  }
           1362b482-2247-43c1-962f-7a22f7e75320:
             uuid: 1362b482-2247-43c1-962f-7a22f7e75320
@@ -127,7 +103,7 @@ third_party_settings:
               info: ''
               view_mode: full
               context_mapping: {  }
-            weight: 6
+            weight: 15
             additional: {  }
           a5a948d6-ecf4-497d-8da5-c712e81feeaa:
             uuid: a5a948d6-ecf4-497d-8da5-c712e81feeaa
@@ -140,7 +116,7 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 8
+            weight: 17
             additional: {  }
           86966f58-d7c1-4bab-8ccd-8fdd1627ae8a:
             uuid: 86966f58-d7c1-4bab-8ccd-8fdd1627ae8a
@@ -153,7 +129,35 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
+            weight: 13
+            additional: {  }
+          86dbe456-ef66-4b9f-84bb-f357dbaa4d47:
+            uuid: 86dbe456-ef66-4b9f-84bb-f357dbaa4d47
+            region: second
+            configuration:
+              id: 'block_content:4b36280e-6236-43ec-b339-1addd09a9d02'
+              label: 'group recent content'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
             weight: 4
+            additional: {  }
+          406fbc97-5952-4e3c-9125-e5788325c725:
+            uuid: 406fbc97-5952-4e3c-9125-e5788325c725
+            region: second
+            configuration:
+              id: 'block_content:c324887c-c846-4a08-b035-19f2737a6a21'
+              label: 'Live news'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 11
             additional: {  }
         third_party_settings: {  }
       -
