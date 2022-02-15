@@ -12,8 +12,9 @@ dependencies:
     - node.type.news
   module:
     - layout_builder
+    - layout_discovery
+    - manage_display
     - text
-    - user
 third_party_settings:
   layout_builder:
     enabled: true
@@ -244,6 +245,23 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 13
             additional: {  }
+          6f162ba9-6c15-4db0-9f9a-e5b9fd8e4c03:
+            uuid: 6f162ba9-6c15-4db0-9f9a-e5b9fd8e4c03
+            region: content
+            configuration:
+              id: 'field_block:node:news:title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  linked: true
+                  tag: h2
+                third_party_settings: {  }
+            weight: 14
+            additional: {  }
         third_party_settings: {  }
 id: node.news.default
 targetEntityType: node
@@ -307,5 +325,16 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
 hidden:
+  created: true
   layout_builder__layout: true
+  uid: true
