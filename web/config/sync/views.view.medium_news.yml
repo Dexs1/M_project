@@ -382,6 +382,7 @@ display:
           view_mode: teaser_medium
       defaults:
         title: false
+        use_ajax: false
         pager: false
         style: false
         row: false
@@ -398,6 +399,7 @@ display:
           admin_label: 'field_tagnews: Taxonomy term'
           plugin_id: standard
           required: false
+      use_ajax: true
       display_description: ''
       display_extenders: {  }
       block_description: Fashion
