@@ -34,7 +34,17 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
 hidden:
+  created: true
   field_editor_pi: true
   field_must_read: true
   field_slogan: true
@@ -42,3 +52,4 @@ hidden:
   field_text_news: true
   layout_builder__layout: true
   links: true
+  uid: true

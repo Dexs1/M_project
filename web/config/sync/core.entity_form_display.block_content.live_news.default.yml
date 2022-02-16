@@ -1,0 +1,20 @@
+uuid: 07800040-4596-44fe-bf92-6aa450d4b3fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.live_news
+id: block_content.live_news.default
+targetEntityType: block_content
+bundle: live_news
+mode: default
+content:
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: b7b47c27-8cac-49d2-8576-5fa79d3b68bd
+langcode: en
+status: true
+dependencies: {  }
+id: live_news
+label: 'Live news'
+revision: 0
+description: ''
