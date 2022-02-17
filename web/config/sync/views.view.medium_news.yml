@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.image_title_date
     - core.entity_view_mode.node.teaser_medium
     - taxonomy.vocabulary.category
   content:
@@ -229,6 +230,54 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+        tid:
+          id: tid
+          table: taxonomy_term_field_data
+          field: tid
+          relationship: field_tagnews
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: tid
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 2
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: category
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
       filter_groups:
         operator: AND
         groups:
@@ -236,8 +285,19 @@ display:
       defaults:
         title: false
         pager: false
+        relationships: false
         filters: false
         filter_groups: false
+      relationships:
+        field_tagnews:
+          id: field_tagnews
+          table: node__field_tagnews
+          field: field_tagnews
+          relationship: none
+          group_type: group
+          admin_label: 'field_tagnews: Taxonomy term'
+          plugin_id: standard
+          required: false
       display_description: ''
       display_extenders: {  }
       block_description: Technology
@@ -246,6 +306,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -290,8 +351,8 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: '-->'
-            previous: '<--'
+            next: ' →'
+            previous: ←
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -314,17 +375,18 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        field_tagnews_target_id:
-          id: field_tagnews_target_id
-          table: node__field_tagnews
-          field: field_tagnews_target_id
-          relationship: none
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_tagnews
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            - 2
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: string
+          operator: '='
+          value: Fashion
           group: 1
           exposed: false
           expose:
@@ -341,7 +403,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -354,12 +416,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          vid: category
-          type: textfield
-          hierarchy: false
-          limit: true
-          error_message: true
       filter_groups:
         operator: AND
         groups:
@@ -379,10 +435,9 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser_medium
+          view_mode: image_title_date
       defaults:
         title: false
-        use_ajax: false
         pager: false
         style: false
         row: false
@@ -399,7 +454,6 @@ display:
           admin_label: 'field_tagnews: Taxonomy term'
           plugin_id: standard
           required: false
-      use_ajax: true
       display_description: ''
       display_extenders: {  }
       block_description: Fashion
@@ -409,7 +463,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -495,7 +548,7 @@ display:
           entity_field: uid
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -562,8 +615,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<div>\r\n{{ uid }}\r\n{{ created }}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -603,7 +656,7 @@ display:
           click_sort_column: value
           type: timestamp
           settings:
-            date_format: medium
+            date_format: balda
             custom_date_format: ''
             timezone: ''
           group_column: value
