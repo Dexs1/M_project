@@ -1,0 +1,10 @@
+uuid: dabd7cc4-d612-49b6-8402-33dc216c0f3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.image_title_date
+label: 'Image title date'
+targetEntityType: node
+cache: true
