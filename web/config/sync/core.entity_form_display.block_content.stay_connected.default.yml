@@ -6,7 +6,14 @@ dependencies:
     - block_content.type.stay_connected
     - field.field.block_content.stay_connected.field_stay_connected
   module:
+    - field_layout
+    - layout_discovery
     - social_media_links_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: block_content.stay_connected.default
 targetEntityType: block_content
 bundle: stay_connected

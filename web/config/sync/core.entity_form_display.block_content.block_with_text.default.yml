@@ -6,7 +6,14 @@ dependencies:
     - block_content.type.block_with_text
     - field.field.block_content.block_with_text.body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: block_content.block_with_text.default
 targetEntityType: block_content
 bundle: block_with_text

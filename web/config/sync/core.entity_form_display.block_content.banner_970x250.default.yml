@@ -6,7 +6,14 @@ dependencies:
     - block_content.type.banner_970x250
     - field.field.block_content.banner_970x250.field_970banner
   module:
+    - field_layout
+    - layout_discovery
     - media_library
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: block_content.banner_970x250.default
 targetEntityType: block_content
 bundle: banner_970x250
