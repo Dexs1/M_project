@@ -1,0 +1,15 @@
+.block-views-blockmedium-news-block-5 {
+  text-align: start;
+  .views-field-created {
+    color: $grey;
+    .field-content {
+      a {
+        color: $author;
+        padding-right: 1rem;
+      }
+    }
+  }
+  .views-field-title {
+    font-weight: 600;
+  }
+}
