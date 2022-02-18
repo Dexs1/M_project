@@ -1,0 +1,15 @@
+uuid: 9a8eb6f7-817b-4edc-a66b-a3b8367fd807
+langcode: en
+status: true
+dependencies: {  }
+name: 208x146
+label: 208X146
+effects:
+  1ca036d9-8da9-4c87-abed-a319cf2ca03a:
+    uuid: 1ca036d9-8da9-4c87-abed-a319cf2ca03a
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 208
+      height: 146
+      anchor: center-center

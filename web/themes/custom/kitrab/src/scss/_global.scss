@@ -1,8 +1,14 @@
+$html-font-size: 16px;
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
 $fonts-global:open-sans;
 a, a.link {
   border-bottom: none;
-    &:hover {
+  &:hover {
     border-bottom: none;
   }
 }
-
