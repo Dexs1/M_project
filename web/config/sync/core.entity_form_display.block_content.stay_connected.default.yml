@@ -1,30 +1,29 @@
-uuid: ec82517c-a4dc-494a-a23c-ad4fbc95372b
+uuid: b16b8c3e-1d21-4ede-8c32-4f06595c3a67
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.banner_970x250
-    - field.field.block_content.banner_970x250.field_970banner
+    - block_content.type.stay_connected
+    - field.field.block_content.stay_connected.field_stay_connected
   module:
     - field_layout
     - layout_discovery
-    - media_library
+    - social_media_links_field
 third_party_settings:
   field_layout:
     id: layout_onecol
     settings:
       label: ''
-id: block_content.banner_970x250.default
+id: block_content.stay_connected.default
 targetEntityType: block_content
-bundle: banner_970x250
+bundle: stay_connected
 mode: default
 content:
-  field_970banner:
-    type: media_library_widget
+  field_stay_connected:
+    type: social_media_links_field_default
     weight: 26
     region: content
-    settings:
-      media_types: {  }
+    settings: {  }
     third_party_settings: {  }
   info:
     type: string_textfield

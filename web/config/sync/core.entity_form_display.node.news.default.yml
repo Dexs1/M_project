@@ -11,9 +11,16 @@ dependencies:
     - field.field.node.news.field_text_news
     - node.type.news
   module:
+    - field_layout
+    - layout_discovery
     - media_library
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.news.default
 targetEntityType: node
 bundle: news
