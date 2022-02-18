@@ -1,0 +1,8 @@
+uuid: 95cd3189-378f-4d0a-97bb-0a7c04154028
+langcode: en
+status: true
+dependencies: {  }
+id: stay_connected
+label: 'Stay connected'
+revision: 0
+description: ''

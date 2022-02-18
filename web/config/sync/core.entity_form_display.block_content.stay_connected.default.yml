@@ -1,0 +1,29 @@
+uuid: b16b8c3e-1d21-4ede-8c32-4f06595c3a67
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stay_connected
+    - field.field.block_content.stay_connected.field_stay_connected
+  module:
+    - social_media_links_field
+id: block_content.stay_connected.default
+targetEntityType: block_content
+bundle: stay_connected
+mode: default
+content:
+  field_stay_connected:
+    type: social_media_links_field_default
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

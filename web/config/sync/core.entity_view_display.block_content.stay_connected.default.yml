@@ -1,0 +1,53 @@
+uuid: 849ef975-6494-4277-9cad-029622f5a129
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stay_connected
+    - field.field.block_content.stay_connected.field_stay_connected
+  module:
+    - layout_builder
+    - social_media_links_field
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          afefd0e1-c93e-4b33-a002-825c9d1f0f02:
+            uuid: afefd0e1-c93e-4b33-a002-825c9d1f0f02
+            region: content
+            configuration:
+              id: 'field_block:block_content:stay_connected:field_stay_connected'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: social_media_links_field_default
+                label: above
+                settings:
+                  appearance: {  }
+                  link_attributes: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.stay_connected.default
+targetEntityType: block_content
+bundle: stay_connected
+mode: default
+content:
+  field_stay_connected:
+    type: social_media_links_field_default
+    label: above
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

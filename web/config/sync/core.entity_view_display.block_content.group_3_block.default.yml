@@ -1,0 +1,141 @@
+uuid: 20d8408d-9ec4-4791-8d00-bfe95da085f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.group_3_block
+    - views.view.large_content
+    - views.view.medium_news
+    - views.view.small_teaser
+  content:
+    - 'block_content:basic:943011ea-d6de-4653-adc0-7b6e2ecb5576'
+    - 'block_content:stay_connected:a7809640-0817-4371-8666-3e70aa6b5fba'
+  module:
+    - block_content
+    - layout_builder
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          4ac64a58-ce9f-418e-8db4-6f73e146418a:
+            uuid: 4ac64a58-ce9f-418e-8db4-6f73e146418a
+            region: first
+            configuration:
+              id: 'views_block:medium_news-block_5'
+              label: Fashion
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: Fashion
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          61dbc2c2-9c8a-4242-bb06-cb2428244da5:
+            uuid: 61dbc2c2-9c8a-4242-bb06-cb2428244da5
+            region: first
+            configuration:
+              id: 'views_block:medium_news-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          be310faa-13fb-4fe0-951a-4f814ee7b7fa:
+            uuid: be310faa-13fb-4fe0-951a-4f814ee7b7fa
+            region: first
+            configuration:
+              id: 'views_block:large_content-block_2'
+              label: Celebrities
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: Celebrities
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          101496c9-115c-44f0-b973-797d5f8afe45:
+            uuid: 101496c9-115c-44f0-b973-797d5f8afe45
+            region: first
+            configuration:
+              id: 'views_block:medium_news-block_3'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional: {  }
+          a14dc6d9-64ad-4a06-8772-ac909c228db2:
+            uuid: a14dc6d9-64ad-4a06-8772-ac909c228db2
+            region: second
+            configuration:
+              id: 'block_content:943011ea-d6de-4653-adc0-7b6e2ecb5576'
+              label: Banner300_250
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
+          cb67fccb-93d6-4ced-a493-bc586c62bed8:
+            uuid: cb67fccb-93d6-4ced-a493-bc586c62bed8
+            region: second
+            configuration:
+              id: 'views_block:small_teaser-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
+            additional: {  }
+          d672cd1f-3a3d-4ea9-b033-1d8b30d73d40:
+            uuid: d672cd1f-3a3d-4ea9-b033-1d8b30d73d40
+            region: second
+            configuration:
+              id: 'views_block:small_teaser-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 4
+            additional: {  }
+          166efe3f-4c18-4d13-b2aa-4ced98035d7b:
+            uuid: 166efe3f-4c18-4d13-b2aa-4ced98035d7b
+            region: second
+            configuration:
+              id: 'block_content:a7809640-0817-4371-8666-3e70aa6b5fba'
+              label: 'Stay connected'
+              label_display: visible
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.group_3_block.default
+targetEntityType: block_content
+bundle: group_3_block
+mode: default
+content: {  }
+hidden: {  }
