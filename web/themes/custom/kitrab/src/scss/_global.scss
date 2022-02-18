@@ -5,7 +5,7 @@ $html-font-size: 16px;
 @function rem($pxValue) {
   @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
 }
-$fonts-global:open-sans;
+$fonts-global: open-sans;
 $grey: #767676;
 $author: #000;
 .contextual-region {
