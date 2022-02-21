@@ -7,7 +7,6 @@ dependencies:
     - taxonomy.vocabulary.category
   content:
     - 'taxonomy_term:category:790c0962-57dc-46c3-bc67-6366d0876859'
-    - 'taxonomy_term:category:ac3461b7-eb26-4704-a9e9-0162ed3aa137'
   module:
     - node
     - taxonomy
@@ -217,6 +216,7 @@ display:
           admin_label: 'field_tagnews: Taxonomy term'
           plugin_id: standard
           required: false
+      css_class: image_float_left
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -235,6 +235,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      title: TV
       filters:
         status:
           id: status
@@ -249,17 +250,18 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          relationship: none
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_tagnews
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            8: 8
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: string
+          operator: '='
+          value: TV
           group: 1
           exposed: false
           expose:
@@ -276,7 +278,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -289,17 +291,12 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          vid: category
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       filter_groups:
         operator: AND
         groups:
           1: AND
       defaults:
+        title: false
         filters: false
         filter_groups: false
       display_extenders: {  }
@@ -309,7 +306,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -319,9 +315,70 @@ display:
     display_plugin: block
     position: 2
     display_options:
-      title: 'Small teaser'
+      title: 'FOOD & DRINK'
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_tagnews
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: string
+          operator: '='
+          value: 'Food&Drink'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       defaults:
         title: false
+        filters: false
+        filter_groups: false
       display_extenders: {  }
       block_description: 'Food&Drink'
     cache_metadata:
@@ -329,7 +386,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
