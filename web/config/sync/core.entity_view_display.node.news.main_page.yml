@@ -37,19 +37,6 @@ third_party_settings:
           context_mapping: {  }
           column_widths: 25-75
         components:
-          9f92f06e-e67b-47d8-90ae-1d63e836a6f8:
-            uuid: 9f92f06e-e67b-47d8-90ae-1d63e836a6f8
-            region: first
-            configuration:
-              id: 'views_block:latest_news-block_1'
-              label: ''
-              label_display: visible
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 0
-            additional: {  }
           406fbc97-5952-4e3c-9125-e5788325c725:
             uuid: 406fbc97-5952-4e3c-9125-e5788325c725
             region: second
@@ -91,6 +78,19 @@ third_party_settings:
               view_mode: full
               context_mapping: {  }
             weight: 19
+            additional: {  }
+          058cb6fb-f090-413e-86b5-190f3bacdc88:
+            uuid: 058cb6fb-f090-413e-86b5-190f3bacdc88
+            region: first
+            configuration:
+              id: 'views_block:latest_news-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
             additional: {  }
         third_party_settings: {  }
       -

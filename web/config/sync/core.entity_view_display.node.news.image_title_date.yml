@@ -18,83 +18,8 @@ dependencies:
     - media
 third_party_settings:
   layout_builder:
-    enabled: true
+    enabled: false
     allow_custom: false
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          81349118-b8d0-4ebf-9e6d-6e59ac81caea:
-            uuid: 81349118-b8d0-4ebf-9e6d-6e59ac81caea
-            region: content
-            configuration:
-              id: 'field_block:node:news:field_image_news'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: media_thumbnail
-                label: hidden
-                settings:
-                  image_link: ''
-                  image_style: 208x146
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          53ae8a87-2fcb-4af3-8be5-794b6c770cdc:
-            uuid: 53ae8a87-2fcb-4af3-8be5-794b6c770cdc
-            region: content
-            configuration:
-              id: 'field_block:node:news:field_tagnews'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_label
-                label: hidden
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          6f7e41d2-8937-4ff0-af4d-25b371b28ed0:
-            uuid: 6f7e41d2-8937-4ff0-af4d-25b371b28ed0
-            region: content
-            configuration:
-              id: 'field_block:node:news:title'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: title
-                label: hidden
-                settings:
-                  linked: true
-                  tag: h2
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          c49ba998-2506-4cda-ac02-d7a8fa8ccbd2:
-            uuid: c49ba998-2506-4cda-ac02-d7a8fa8ccbd2
-            region: content
-            configuration:
-              id: 'field_block:node:news:created'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: timestamp
-                label: hidden
-                settings:
-                  date_format: balda
-                  custom_date_format: ''
-                  timezone: ''
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
-        third_party_settings: {  }
 id: node.news.image_title_date
 targetEntityType: node
 bundle: news
@@ -104,7 +29,7 @@ content:
     type: timestamp
     label: hidden
     settings:
-      date_format: balda
+      date_format: m_d_y
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }

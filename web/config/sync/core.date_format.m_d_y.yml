@@ -1,0 +1,8 @@
+uuid: f3828a02-7a56-40bd-a371-24c4597a18f4
+langcode: en
+status: true
+dependencies: {  }
+id: m_d_y
+label: m/d/Y
+locked: false
+pattern: m/d/Y
