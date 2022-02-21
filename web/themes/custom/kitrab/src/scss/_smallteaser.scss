@@ -1,0 +1,17 @@
+.block-views{
+  text-align: start;
+  .node--view-mode-teaser-small {
+    .layout--twocol-section {
+      flex-wrap: nowrap;
+    }
+    .block-field-blocknodenewsfield-image-news {
+     min-width:100%;
+    }
+    .layout__region--second{
+      text-align: start;
+      .field--name-title {
+        line-height: 1.1rem;
+      }
+    }
+  }
+}
