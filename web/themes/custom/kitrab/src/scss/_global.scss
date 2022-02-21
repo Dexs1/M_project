@@ -2,21 +2,26 @@ $html-font-size: 16px;
 @function stripUnit($value) {
   @return $value / ($value * 0 + 1);
 }
+
 @function rem($pxValue) {
   @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
 }
+
 $fonts-global: open-sans;
 $grey: #767676;
 $author: #000;
+$yellow: #ffcd3f;
 .contextual-region {
   a {
     color: black;
     border-bottom: none;
+
     &:hover {
       border-bottom: none;
     }
   }
 }
-.field--name-created{
-  color: grey;
+
+.views-field-field-slogan {
+  color: $grey;
 }

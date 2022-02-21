@@ -1,0 +1,19 @@
+.block-views-blocklatest-news-block-1 {
+  .views-row {
+    padding-bottom: rem(15);
+  }
+
+  color: $yellow;
+
+  h2 {
+    color: black;
+  }
+
+  .views-field-title {
+    font-weight: 800;
+
+    .field--tags__items {
+      text-transform: uppercase;
+    }
+  }
+}
