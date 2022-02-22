@@ -8,8 +8,8 @@ dependencies:
     - kitrab
 id: kitrab_socialmedialinks_2
 theme: kitrab
-region: footer_fifth
-weight: -13
+region: footer_fourth
+weight: -9
 provider: null
 plugin: social_media_links_block
 settings:

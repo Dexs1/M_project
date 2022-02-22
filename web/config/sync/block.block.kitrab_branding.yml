@@ -10,7 +10,7 @@ _core:
   default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
 id: kitrab_branding
 theme: kitrab
-region: footer_fifth
+region: footer_fourth
 weight: -11
 provider: null
 plugin: system_branding_block
