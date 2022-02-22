@@ -29,6 +29,7 @@
         "drupal/simple_social_icons": "^3.0",
         "drupal/social_media_links": "^2.8",
         "drupal/token": "^1.10",
+        "drupal/twig_vardumper": "^3.0",
         "drupal/views_bulk_operations": "^4.0",
         "drush/drush": "^10.2"
     },

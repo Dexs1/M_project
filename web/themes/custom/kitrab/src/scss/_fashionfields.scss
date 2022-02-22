@@ -12,4 +12,23 @@
   .views-field-title {
     font-weight: 600;
   }
+  .views-view-grid{
+      .views-col {
+        padding-right: 2.5rem;
+      }
+  }
+}
+.view-display-id-block_4 {
+  .view-content {
+    .views-col {
+      padding-left: rem(7.5);
+      padding-right: rem(7.5);
+    }
+  }
+  .pager__items {
+   text-align:start;
+    .pager__item {
+      font-size: rem(25);
+    }
+  }
 }
