@@ -44,7 +44,7 @@ third_party_settings:
                 label: hidden
                 settings:
                   image_link: content
-                  image_style: 90x90
+                  image_style: small_footer
                 third_party_settings: {  }
             weight: 0
             additional: {  }
@@ -82,7 +82,7 @@ third_party_settings:
                 type: timestamp
                 label: hidden
                 settings:
-                  date_format: balda
+                  date_format: m_d_y
                   custom_date_format: ''
                   timezone: ''
                 third_party_settings: {  }
