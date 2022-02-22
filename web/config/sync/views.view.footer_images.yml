@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_media_image
+    - image.style.medium_300x300
     - media.type.image
   module:
     - image
@@ -78,7 +79,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: ''
+            image_style: medium_300x300
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -191,10 +192,13 @@ display:
           col_class_custom: ''
           col_class_default: true
       row:
-        type: 'entity:media'
+        type: fields
         options:
-          relationship: none
-          view_mode: default
+          default_field_elements: true
+          inline:
+            field_media_image: field_media_image
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
