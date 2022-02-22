@@ -1,0 +1,25 @@
+uuid: 9819a178-7020-4e13-8009-0ea9aadb64c4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_with_text:d4827c7a-9769-455d-b86a-7f366cbccd49'
+  module:
+    - block_content
+  theme:
+    - kitrab
+id: aboutus_2
+theme: kitrab
+region: footer_fourth
+weight: -10
+provider: null
+plugin: 'block_content:d4827c7a-9769-455d-b86a-7f366cbccd49'
+settings:
+  id: 'block_content:d4827c7a-9769-455d-b86a-7f366cbccd49'
+  label: 'About Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
