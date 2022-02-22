@@ -2,6 +2,7 @@ $html-font-size: 16px;
 @function stripUnit($value) {
   @return $value / ($value * 0 + 1);
 }
+
 @function rem($pxValue) {
   @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
 }
@@ -22,5 +23,24 @@ $yellow: #ffcd3f;
 }
 
 .views-field-field-slogan {
-  color: $grey;
+  .layout-container {
+    color: $grey;
+  }
+}
+
+.site-footer {
+  background-color: #9f9d9d !important;
+  h2 {
+    color: $author;
+  }
+
+  .content {
+    color: $author;
+
+    span {
+      a {
+        color: $author;
+      }
+    }
+  }
 }
