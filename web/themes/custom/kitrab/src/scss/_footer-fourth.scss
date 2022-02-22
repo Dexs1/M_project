@@ -1,0 +1,48 @@
+.region-footer-fourth {
+  display: flex;
+  justify-content: center;
+  gap: rem(30);
+
+  .site-branding {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    @include media-breakpoint-max($md) {
+      justify-content: center;
+      a {
+        font-size: 30px;
+      }
+    }
+
+    .site-branding__slogan {
+      font-size: rem(10);
+      line-height: rem(1);
+    }
+  }
+
+  .block-block-contentd4827c7a-9769-455d-b86a-7f366cbccd49 {
+    width: 60%;
+
+    .field--type-text-with-summary {
+      p {
+        font-size: rem(12);
+      }
+    }
+
+    @include media-breakpoint-max($md) {
+      width: 100%;
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
+  .block-social-media-links {
+    text-align: center;
+  }
+
+  @include media-breakpoint-max($md) {
+    display: block;
+  }
+}
