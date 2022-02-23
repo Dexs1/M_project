@@ -1,4 +1,4 @@
-uuid: 70a04712-7dec-43a8-92a3-abb82139b5d4
+uuid: 807d691d-36fc-4af0-802c-ddcd2f01df21
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - views
   theme:
-    - bartik
+    - kitrab
 id: views_block__hot_topics_block_1
-theme: bartik
-region: footer_fourth
-weight: -10
+theme: kitrab
+region: footer_third
+weight: 0
 provider: null
 plugin: 'views_block:hot_topics-block_1'
 settings:

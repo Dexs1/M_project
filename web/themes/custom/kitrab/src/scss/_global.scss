@@ -2,6 +2,7 @@ $html-font-size: 16px;
 @function stripUnit($value) {
   @return $value / ($value * 0 + 1);
 }
+
 @function rem($pxValue) {
   @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
 }
@@ -10,6 +11,7 @@ $fonts-global: open-sans;
 $grey: #767676;
 $author: #000;
 $yellow: #ffcd3f;
+$white: #f6f4f4;
 .contextual-region {
   a {
     color: black;
@@ -22,5 +24,24 @@ $yellow: #ffcd3f;
 }
 
 .views-field-field-slogan {
-  color: $grey;
+  .layout-container {
+    color: $grey;
+  }
+}
+
+.site-footer {
+  background-color: $white !important;
+  h2 {
+    color: $author;
+  }
+
+  .content {
+    color: $author;
+
+    span {
+      a {
+        color: $author;
+      }
+    }
+  }
 }

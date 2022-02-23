@@ -1,24 +1,25 @@
-uuid: 659e31c1-e535-43b4-96d6-d94dd632a3d2
+uuid: bde3924e-8b4a-4416-aba3-e42b01f58f0b
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.hot_topics
+    - views.view.must_read
   module:
     - views
   theme:
     - kitrab
-id: kitrab_views_block__hot_topics_block_1
+id: views_block__must_read_block_3
 theme: kitrab
-region: footer_third
-weight: -8
+region: footer_second
+weight: 0
 provider: null
-plugin: 'views_block:hot_topics-block_1'
+plugin: 'views_block:must_read-block_3'
 settings:
-  id: 'views_block:hot_topics-block_1'
+  id: 'views_block:must_read-block_3'
   label: ''
   label_display: visible
   provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
 visibility: {  }
