@@ -24,3 +24,23 @@ $yellow: #ffcd3f;
 .views-field-field-slogan {
   color: $grey;
 }
+.site-footer {
+  background-color: grey!important;
+}
+.site-branding {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  @include media-breakpoint-max($md) {
+    justify-content: center;
+    a {
+      font-size: 30px;
+    }
+  }
+
+  .site-branding__slogan {
+    font-size: rem(10);
+    line-height: rem(1);
+  }
+}

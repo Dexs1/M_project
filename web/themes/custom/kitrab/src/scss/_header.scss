@@ -1,0 +1,40 @@
+.region-header {
+  display: grid;
+
+  .site-branding {
+    grid-column: 2;
+
+  }
+
+  .block-social-media-links-block {
+    grid-column: 9;
+
+    .content {
+      font-size: rem(7);
+      letter-spacing: rem(10);
+
+    }
+  }
+
+  .menu--main {
+    grid-column: 3;
+    width: auto;
+    border: none;
+
+    .menu {
+      display: flex;
+      font-size: rem(14);
+
+      a {
+        padding: rem(10);
+        border: none;
+
+        &:hover {
+          color: $yellow;
+          background-color: unset;
+        }
+      }
+
+    }
+  }
+}
