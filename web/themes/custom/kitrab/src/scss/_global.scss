@@ -11,6 +11,7 @@ $fonts-global: open-sans;
 $grey: #767676;
 $author: #000;
 $yellow: #ffcd3f;
+$white: #f6f4f4;
 .contextual-region {
   a {
     color: black;
@@ -29,7 +30,7 @@ $yellow: #ffcd3f;
 }
 
 .site-footer {
-  background-color: #9f9d9d !important;
+  background-color: $white !important;
   h2 {
     color: $author;
   }

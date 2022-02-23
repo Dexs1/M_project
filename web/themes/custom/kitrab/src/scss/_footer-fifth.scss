@@ -1,19 +1,23 @@
 .site-footer__top {
   .field--name-created {
-    font-size:rem(12);
+    font-size: rem(12);
     color: $grey;
   }
+
   .block {
     padding-top: 0;
     padding-bottom: 0;
     margin: rem(3);
   }
+
   .image-style-small-footer {
     max-width: 111px;
   }
+
   .block-field-blocknodenewscreated {
-    padding-top:0;
+    padding-top: 0;
   }
+
   font-size: rem(18);
 
   h2 {
@@ -41,9 +45,15 @@
       display: flex;
       justify-content: space-between;
       line-height: 2rem;
-      &:hover {
-        color: yellow;
+
+      .views-field-field-tagnews {
+        a {
+          &:hover {
+            color: $yellow;
+          }
+        }
       }
     }
   }
 }
+

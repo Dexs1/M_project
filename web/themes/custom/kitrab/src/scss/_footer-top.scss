@@ -30,6 +30,10 @@
       }
     }
 
+    a {
+      color: $yellow;
+    }
+
     @include media-breakpoint-max($md) {
       width: 100%;
       h2 {
@@ -39,7 +43,15 @@
   }
 
   .block-social-media-links {
-    text-align: center;
+    text-align: start;
+
+    .social-media-links--platforms {
+      a {
+        font-style: italic;
+        font-size: rem(10);
+        color: $author;
+      }
+    }
   }
 
   @include media-breakpoint-max($md) {
